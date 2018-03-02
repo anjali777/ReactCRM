@@ -110,7 +110,7 @@ class DetailsView extends Component {
       <ScrollView showsVerticalScrollIndicator={false}>
         <View style={[theme.cardStyle, styles.card]}>
         <Image
-            source={{uri: '../images/background.jpg'}}
+            source={require('../images/background.jpg')}
             style={[theme.cardImageStyle, styles.image]}
         />
         <EvilIcon name={'user'} size={100} style={styles.icon}/>
@@ -155,17 +155,17 @@ class DetailsView extends Component {
             <TouchableOpacity
                 onPress={() => { this.handleClick(`tel:${this.props.person.phone}`)}}
             >
-                <Image source={{uri: '../images/call@2x.png'}} style={styles.actionImage}/>
+                <Image source={require('../images/call.png')} style={styles.actionImage}/>
             </TouchableOpacity>
             <TouchableOpacity
                 onPress={() => { this.handleClick(`sms:${this.props.person.phone}`)}}
             >
-                <Image source={{uri: '../images/sms@2x.png'}} style={styles.actionImage}/>
+                <Image source={require('../images/sms.png')} style={styles.actionImage}/>
             </TouchableOpacity>
             <TouchableOpacity
                 onPress={() => { this.handleClick(`mailto:${this.props.person.email}`)}}
             >
-                <Image source={{uri: '../images/email@2x.png'}} style={styles.actionImage}/>
+                <Image source={require('../images/email.png')} style={styles.actionImage}/>
             </TouchableOpacity>
         </View>
         <View style={styles.actionArea}>

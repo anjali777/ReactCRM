@@ -39,7 +39,7 @@ const PeopleItem = (props) => {
         >
             <View style={[theme.cardStyle, styles.card]}>
                 <Image
-                    source={{ uri: '../images/background.jpg'}}
+                    source={require('../images/background.jpg')}
                     style={[theme.cardImageStyle, styles.image]}
                 />
                 <Icon

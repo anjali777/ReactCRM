@@ -25,6 +25,7 @@ const styles = StyleSheet.create({
     color: MKColor.Orange,
   },
   addButton:{
+    flex: 1,
     marginBottom: 15,
   },
   title: {
@@ -47,8 +48,7 @@ class AddPerson extends Component {
       tabBarLabel: 'Add Person',
       tabBarIcon: ({ tintColor }) => (
           <Image
-            style={styles.addButton}
-            source={{uri: '../images/add_button@3x.png'}}
+            source={require('../images/add_button.png')}
             />
       )
     }
